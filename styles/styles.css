@@ -1,0 +1,165 @@
+body {
+  background-image: linear-gradient(to right, lightblue, #0096ff);
+  /* background-image: url("../pictures/puppy.jpg");
+  background-size: contain; */
+}
+
+h1 {
+  font-size: 50px;
+  color: #0f2c59;
+  font-family: "Borel", cursive;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+p#brief-intro {
+  margin-top: 0;
+}
+
+.section {
+  padding: 20px;
+  position: relative;
+  margin: 20px 10px;
+  background-image: linear-gradient(to right, #5cd2e6, #d5ffe4);
+  opacity: 0.88;
+  border-radius: 10px;
+}
+
+.section:hover {
+  background: #97fff4;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2,
+h3,
+h4,
+p,
+a,
+li,
+th,
+td,
+summary,
+label,
+legend {
+  font-family: "Mooli", sans-serif;
+}
+
+hr {
+  width: 100px;
+  border: 5px solid black;
+  border-style: dotted;
+  border-radius: 50px;
+  border-top: 0;
+}
+
+.nav-bar {
+  background-image: linear-gradient(to right, #5cd2e6, #d5ffe4);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-list {
+  margin-right: 10px;
+}
+
+img#my-logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+details:hover {
+  background-color: aqua;
+  color: blue;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+#feedback {
+  margin-bottom: 10px;
+}
+
+.icon-container {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon-container p#copyright {
+  position: relative;
+  bottom: 0;
+  margin-left: auto;
+}
+
+img.icon {
+  width: 20px;
+}
+
+#fname,
+#lname,
+#email,
+#feedback-text {
+  width: 100%;
+  margin: 8px 0px 8px 0px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+fieldset input#submit {
+  border-radius: 20px;
+}
+
+fieldset input#submit:hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
+
+/* aboutme.html */
+
+img#avatar {
+  float: left;
+  margin: 5px 10px 5px 0;
+  border-radius: 50px;
+}
+
+.bio {
+  height: 450px;
+}
+
+/* calender.html */
+
+table#planner {
+  width: 100%;
+}
+
+table#planner th {
+  background-color: greenyellow;
+}
+
+table#planner td {
+  text-align: center;
+  background-color: lightblue;
+}
+
+div.table {
+  overflow-x: auto;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  position: relative;
+  top: 4px;
+}
