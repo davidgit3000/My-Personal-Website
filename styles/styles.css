@@ -78,6 +78,80 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+ul.clubs-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: baseline;
+  text-align: center;
+}
+
+.clubs-container > li > img {
+  height: 200px;
+  align-self: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.skills-bar {
+  width: 100%;
+}
+.skills-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.skills {
+  border-radius: 20px;
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.java {
+  width: 80%;
+  background-color: green;
+}
+
+.cpp {
+  width: 70%;
+  background-color: green;
+}
+
+.python {
+  width: 75%;
+  background-color: green;
+}
+
+.python {
+  width: 75%;
+  background-color: green;
+}
+
+.html {
+  width: 80%;
+  background-color: green;
+}
+
+.css {
+  width: 70%;
+  background-color: green;
+}
+
+.js {
+  width: 60%;
+  background-color: green;
+}
+
 a:hover,
 details:hover {
   background-color: aqua;
@@ -125,6 +199,16 @@ fieldset input#submit {
 fieldset input#submit:hover {
   background-color: greenyellow;
   cursor: pointer;
+}
+
+.memes-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.memes-container > img {
+  width: 300px;
 }
 
 /* aboutme.html */
