@@ -11,6 +11,7 @@ body {
   background-image: url("../pictures/puppy.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-position-y: 900px;
 }
 
 h1 {
@@ -340,6 +341,7 @@ img.icon {
 #email,
 #feedback-text {
   margin: 8px 0px 8px 0px;
+  font-size: 15px;
   border-style: none;
   border-radius: 8px;
 }
@@ -388,7 +390,7 @@ iframe {
   height: 152px;
 }
 
-.copyright,
+div.copyright > p,
 .icon-container > a {
   font-weight: 700;
 }
@@ -454,8 +456,8 @@ div.table {
 }
 
 /* ------------------- Responsiveness ----------------------------------*/
-/* use @media annotations */
-@media (min-width: 300px) and (max-width: 750px) {
+/* use @media annotations and (max-width: 750px) */
+@media (min-width: 300px) and (max-width: 500px) {
   html {
     width: fit-content;
   }
@@ -465,7 +467,13 @@ div.table {
     background-image: url("../pictures/puppy.jpg");
     background-size: cover;
     background-position-x: 1400px;
+    background-position-y: 1700px;
     background-attachment: fixed;
+  }
+
+  body#bg {
+    background-position-x: 1250px;
+    background-position-y: 1380px;
   }
 
   h1 {
@@ -483,11 +491,11 @@ div.table {
   }
 
   div.bio {
-    height: 4200px;
+    height: 2950px;
   }
 
   .bio p {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   div.second-nav-bar {
@@ -573,7 +581,7 @@ div.table {
   }
 
   a#resume {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   td {
@@ -644,7 +652,7 @@ div.table {
     height: 50px;
   }
 
-  textarea {
+  textarea#feedback-text {
     font-size: 20px;
   }
 
@@ -714,7 +722,7 @@ div.table {
   }
 
   div#copyright1 > p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   img.icon {
@@ -729,43 +737,96 @@ div.table {
   }
 }
 
+@media (min-width: 375px) and (max-width: 424px) {
+  body {
+    background-position-x: 1200px;
+    background-position-y: 1450px;
+  }
+
+  body#bg {
+    background-position-x: 1100px;
+    background-position-y: 585px;
+  }
+}
+
+/* ------------------------------------------------------- */
+@media (min-width: 425px) and (max-width: 700px) {
+  div.bio {
+    height: 2750px;
+  }
+
+  body {
+    background-position-x: 1150px;
+    background-position-y: 1275px;
+  }
+
+  body#bg {
+    background-position-x: 1050px;
+    background-position-y: 1113px;
+  }
+}
+
 /* ------------------------------------------------- */
-@media (min-width: 751px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1000px) {
   html {
     width: fit-content;
   }
+
+  body {
+    background-position-x: 860px;
+    background-position-y: 850px;
+  }
+
+  body#bg {
+    background-position-x: 765px;
+    background-position-y: 750px;
+  }
+
+  div.bio {
+    height: 1300px;
+  }
+
+  .bio p {
+    font-size: 25px;
+  }
+
+  a#resume {
+    font-size: 25px;
+  }
+
   h1 {
     width: 100%;
     font-size: 70px;
-  }
-
-  img#wave {
-    width: 100px;
   }
 
   h2 {
     font-size: 50px;
   }
 
-  ol > li > a,
-  h3 {
-    font-size: 40px;
-  }
-
-  h4,
-  p,
-  details,
-  a#lofi {
-    font-size: 30px;
-  }
-
-  a span.material-symbols-outlined {
-    font-size: 30px;
+  .nav-bar {
+    background-image: linear-gradient(to right, #5cd2e6, #d5ffe4);
+    border-radius: 30px;
+    display: flex;
+    height: 60px;
+    font-size: 25px;
+    justify-content: space-between;
+    align-items: center;
     font-weight: bold;
   }
 
-  a#resume {
-    font-size: 25px;
+  a span.material-symbols-outlined {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  img.my-logo {
+    width: 60px;
+    border-radius: 50%;
+    transition: border-radius 1s;
+  }
+
+  img#wave {
+    width: 200px;
   }
 
   p#brief-intro {
@@ -779,25 +840,24 @@ div.table {
     font-size: 30px;
   }
 
-  td {
+  ol > li > a,
+  h3 {
     font-size: 35px;
   }
 
-  .nav-bar {
-    background-image: linear-gradient(to right, #5cd2e6, #d5ffe4);
-    border-radius: 30px;
-    display: flex;
-    height: 80px;
+  h4,
+  p,
+  details,
+  a#lofi {
     font-size: 30px;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
   }
 
-  img.my-logo {
-    width: 80px;
-    border-radius: 50%;
-    transition: border-radius 1s;
+  td {
+    font-size: 25px;
+  }
+
+  iframe {
+    height: 300px;
   }
 
   .figure-container {
@@ -813,10 +873,14 @@ div.table {
     height: 400px;
   }
 
+  figcaption {
+    font-size: 30px;
+  }
+
   figure > img#flash,
   figure > img#stranger_things {
-    height: 500px;
-    width: 650px;
+    height: 400px;
+    width: 550px;
   }
 
   figure > img#einstein {
@@ -825,58 +889,55 @@ div.table {
 
   figure > img#jfk {
     height: 450px;
-    width: 700px;
-  }
-
-  figcaption {
-    font-size: 35px;
+    width: 600px;
   }
 
   .memes-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
   }
 
   .memes-container img {
-    width: 550px;
+    width: 400px;
   }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: 250px 250px;
-    gap: 5px;
-    margin-bottom: 10px;
-    align-items: center;
+  a.button,
+  input.button {
+    border: 1px solid black;
+    background-color: lightgreen;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+    width: 150px;
+    height: 80px;
+    box-shadow: -3px -3px #191414;
   }
 
   fieldset {
-    font-size: 40px;
-  }
-
-  textarea {
-    width: 900px;
-    font-size: 20px;
+    font-size: 30px;
   }
 
   input#fname,
   input#lname,
   input#email {
-    font-size: 35px;
-    width: 600px;
+    font-size: 30px;
+    width: 500px;
     height: 50px;
   }
 
-  img.icon {
-    width: 35px;
+  textarea {
+    font-size: 20px;
   }
 
-  a#discord-link,
-  a#linkedln-link,
-  a#github-link {
-    text-align: center;
-    font-size: 25px;
+  .grid-container {
+    display: grid;
+    grid-template-columns: 300px 500px;
+    gap: 5px;
+    margin-bottom: 10px;
+    align-items: center;
   }
 
   .connect-section {
@@ -897,15 +958,10 @@ div.table {
     font-size: 25px;
   }
 
-  div.bio {
-    height: 1800px;
-  }
-
-  .bio p {
-    font-size: 30px;
-  }
-
-  div#copyright1 > p {
-    font-size: 20px;
+  a#discord-link,
+  a#linkedln-link,
+  a#github-link {
+    text-align: center;
+    font-size: 25px;
   }
 }
