@@ -7,11 +7,11 @@ html {
 }
 
 body {
-  /* background-image: linear-gradient(to right, lightblue, #0096ff); */
-  background-image: url("../pictures/puppy.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position-y: 900px;
+  background-image: linear-gradient(to right, lightblue, #0096ff);
+  /* background-image: url("../pictures/puppy.jpg"); */
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+  /* background-position-y: 900px; */
 }
 
 h1 {
@@ -39,6 +39,7 @@ figcaption {
 
 th {
   font-size: 20px;
+  width: 200px;
 }
 
 td {
@@ -49,14 +50,6 @@ h2 {
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
-}
-
-hr {
-  width: 100px;
-  border: 5px solid black;
-  border-style: dotted;
-  border-radius: 50px;
-  border-top: 0;
 }
 
 a {
@@ -273,7 +266,7 @@ img#bronco-logo {
 }
 
 audio {
-  width: 300px;
+  width: 950px;
   height: 30px;
 }
 
@@ -299,7 +292,7 @@ figcaption {
   margin-bottom: 10px;
 }
 
-.connect-section {
+.flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -324,11 +317,10 @@ img.icon {
   align-items: center;
 }
 
-.todo-container {
-  position: relative;
-  left: 300px;
-  justify-content: center;
-  width: fit-content;
+#todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 10px 40px 10px 0;
   margin-bottom: 20px;
   border: 2px solid black;
@@ -350,7 +342,8 @@ fieldset {
   box-shadow: 4px 4px black;
 }
 
-.button {
+a.button,
+input.button {
   border: 1px solid black;
   background-color: lightgreen;
   border-radius: 20px;
@@ -371,10 +364,10 @@ fieldset {
   cursor: pointer;
 }
 
-.complete-btn {
+/* .complete-btn {
   position: relative;
   left: 550px;
-}
+} */
 
 .memes-container {
   display: flex;
@@ -462,27 +455,13 @@ div.table {
     width: fit-content;
   }
 
-  /* background-image: linear-gradient(to right, lightblue, #0096ff); */
-  body {
-    background-image: url("../pictures/puppy.jpg");
-    background-size: cover;
-    background-position-x: 1400px;
-    background-position-y: 1700px;
-    background-attachment: fixed;
-  }
-
-  body#bg {
-    background-position-x: 1250px;
-    background-position-y: 1380px;
-  }
-
   h1 {
     width: 100%;
     font-size: 80px;
   }
 
   h2 {
-    font-size: 50px;
+    font-size: 55px;
   }
 
   .bio img#avatar {
@@ -498,15 +477,16 @@ div.table {
     font-size: 25px;
   }
 
+  .nav-bar {
+    height: 100px;
+    font-size: 45px;
+    font-weight: bold;
+  }
+
   div.second-nav-bar {
-    background-image: linear-gradient(to right, #5cd2e6, #d5ffe4);
-    border-radius: 30px;
     display: flex;
     height: 150px;
     padding: 10px;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
   }
 
   #second-nav-list {
@@ -525,15 +505,10 @@ div.table {
     border-bottom: none;
   }
 
-  .nav-bar {
-    background-image: linear-gradient(to right, #5cd2e6, #d5ffe4);
-    border-radius: 30px;
-    display: flex;
+  div.third-nav-bar {
     height: 100px;
-    font-size: 45px;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
+    width: 1245px;
+    padding: 10px;
   }
 
   a span.material-symbols-outlined {
@@ -570,22 +545,27 @@ div.table {
 
   ol > li > a,
   h3 {
-    font-size: 45px;
+    font-size: 60px;
   }
 
   h4,
   p,
   details,
   a#lofi {
-    font-size: 40px;
+    font-size: 45px;
   }
 
-  a#resume {
-    font-size: 20px;
+  th {
+    font-size: 40px;
+    height: 100px;
   }
 
   td {
     font-size: 35px;
+  }
+
+  a#resume {
+    font-size: 20px;
   }
 
   img#bronco-logo {
@@ -611,15 +591,10 @@ div.table {
 
   a.button,
   input.button {
-    border: 1px solid black;
-    background-color: lightgreen;
-    font-size: 30px;
-    border-radius: 20px;
-    padding: 5px;
+    font-size: 40px;
     margin: 10px;
     width: 200px;
     height: 80px;
-    box-shadow: -3px -3px #191414;
   }
 
   iframe {
@@ -636,7 +611,7 @@ div.table {
   }
 
   audio {
-    width: 900px;
+    width: 1200px;
     height: 50px;
   }
 
@@ -653,7 +628,7 @@ div.table {
   }
 
   textarea#feedback-text {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .figure-container {
@@ -665,27 +640,27 @@ div.table {
   }
 
   ul.figure-container > li > img {
-    width: 500px;
-    height: 400px;
+    width: 700px;
+    height: 600px;
   }
 
   figcaption {
-    font-size: 35px;
+    font-size: 50px;
   }
 
   figure > img#flash,
   figure > img#stranger_things {
-    height: 400px;
-    width: 550px;
+    height: 600px;
+    width: 750px;
   }
 
   figure > img#einstein {
-    height: 450px;
+    height: 650px;
   }
 
   figure > img#jfk {
-    height: 450px;
-    width: 700px;
+    height: 650px;
+    width: 900px;
   }
 
   .memes-container {
@@ -696,7 +671,7 @@ div.table {
   }
 
   .memes-container img {
-    width: 550px;
+    width: 750px;
   }
 
   .grid-container {
@@ -707,9 +682,23 @@ div.table {
     align-items: center;
   }
 
-  .connect-section {
+  .flex-container {
     flex-direction: column;
     margin-top: 30px;
+  }
+
+  .checklist {
+    font-size: 50px;
+  }
+
+  div.todo-checklist {
+    grid-template-columns: 100px 800px;
+    grid-template-rows: 120px 100px 100px;
+    gap: 15px;
+  }
+
+  input.checkBox {
+    height: 40px;
   }
 
   .icon-container {
@@ -737,32 +726,10 @@ div.table {
   }
 }
 
-@media (min-width: 375px) and (max-width: 424px) {
-  body {
-    background-position-x: 1200px;
-    background-position-y: 1450px;
-  }
-
-  body#bg {
-    background-position-x: 1100px;
-    background-position-y: 585px;
-  }
-}
-
 /* ------------------------------------------------------- */
-@media (min-width: 425px) and (max-width: 700px) {
+@media (min-width: 425px) and (max-width: 767px) {
   div.bio {
     height: 2750px;
-  }
-
-  body {
-    background-position-x: 1150px;
-    background-position-y: 1275px;
-  }
-
-  body#bg {
-    background-position-x: 1050px;
-    background-position-y: 1113px;
   }
 }
 
@@ -770,16 +737,6 @@ div.table {
 @media (min-width: 768px) and (max-width: 1000px) {
   html {
     width: fit-content;
-  }
-
-  body {
-    background-position-x: 860px;
-    background-position-y: 850px;
-  }
-
-  body#bg {
-    background-position-x: 765px;
-    background-position-y: 750px;
   }
 
   div.bio {
@@ -808,10 +765,14 @@ div.table {
     border-radius: 30px;
     display: flex;
     height: 60px;
-    font-size: 25px;
+    font-size: 30px;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+  }
+
+  #second-nav-list a {
+    font-size: 25px;
   }
 
   a span.material-symbols-outlined {
@@ -842,14 +803,19 @@ div.table {
 
   ol > li > a,
   h3 {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   h4,
   p,
   details,
   a#lofi {
+    font-size: 35px;
+  }
+
+  th {
     font-size: 30px;
+    height: 100px;
   }
 
   td {
@@ -869,27 +835,41 @@ div.table {
   }
 
   ul.figure-container > li > img {
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
   }
 
   figcaption {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   figure > img#flash,
   figure > img#stranger_things {
-    height: 400px;
-    width: 550px;
+    height: 600px;
+    width: 750px;
   }
 
   figure > img#einstein {
-    height: 450px;
+    height: 550px;
   }
 
   figure > img#jfk {
-    height: 450px;
-    width: 600px;
+    height: 550px;
+    width: 900px;
+  }
+
+  #audio-box {
+    margin-bottom: 10px;
+    border-radius: 25px;
+    box-shadow: -8px -7px #191414;
+    width: fit-content;
+    height: 50px;
+    background-color: red;
+  }
+
+  audio {
+    width: 1200px;
+    height: 50px;
   }
 
   .memes-container {
@@ -900,20 +880,15 @@ div.table {
   }
 
   .memes-container img {
-    width: 400px;
+    width: 600px;
   }
 
   a.button,
   input.button {
-    border: 1px solid black;
-    background-color: lightgreen;
-    font-size: 25px;
-    border-radius: 20px;
-    padding: 5px;
+    font-size: 30px;
     margin: 10px;
     width: 150px;
     height: 80px;
-    box-shadow: -3px -3px #191414;
   }
 
   fieldset {
@@ -928,8 +903,8 @@ div.table {
     height: 50px;
   }
 
-  textarea {
-    font-size: 20px;
+  textarea#feedback-text {
+    font-size: 25px;
   }
 
   .grid-container {
@@ -940,9 +915,23 @@ div.table {
     align-items: center;
   }
 
-  .connect-section {
+  .flex-container {
     flex-direction: column;
     margin-top: 30px;
+  }
+
+  .checklist {
+    font-size: 35px;
+  }
+
+  div.todo-checklist {
+    grid-template-columns: 100px 700px;
+    grid-template-rows: 80px 80px 80px;
+    gap: 15px;
+  }
+
+  input.checkBox {
+    height: 30px;
   }
 
   .icon-container {

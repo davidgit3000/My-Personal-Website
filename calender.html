@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <div class="nav-bar second-nav-bar">
+    <div class="nav-bar third-nav-bar">
       <a href="index.html"
         ><img
           src="pictures/dl_logo.png"
@@ -29,7 +29,7 @@
           id="my-logo-2"
           alt="My logo"
       /></a>
-      <nav class="nav-list" id="second-nav-list">
+      <nav class="nav-list" id="third-nav-list">
         <a href="index.html"
           ><span class="material-symbols-outlined">home</span>Home</a
         >
@@ -50,13 +50,13 @@
       <div class="table">
         <table id="planner">
           <tr>
-            <th width="200">Sunday</th>
-            <th width="200">Monday</th>
-            <th width="200">Tuesday</th>
-            <th width="200">Wednesday</th>
-            <th width="200">Thursday</th>
-            <th width="200">Friday</th>
-            <th width="200">Saturday</th>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
           </tr>
           <tr>
             <td>08:00am - 09:00am</td>
@@ -174,22 +174,34 @@
     </div>
 
     <div class="section">
-      <h2>TO-DO List</h2>
+      <h2>To-do List</h2>
       <form>
-        <div class="grid-container todo-container">
-          <input type="checkbox" value="task1" />
-          <label> Work on my personal website</label>
-          <input type="checkbox" />
-          <input type="text" placeholder="Type the task here" />
-          <input type="checkbox" />
-          <input type="text" placeholder="Type the task here" />
+        <div id="todo-container">
+          <div class="grid-container todo-checklist">
+            <input class="checkBox" type="checkbox" value="task1" />
+            <label class="checklist"> Work on my personal website</label>
+            <input class="checkBox" type="checkbox" />
+            <input
+              class="checklist"
+              type="text"
+              placeholder="Type the task here"
+            />
+            <input class="checkBox" type="checkbox" />
+            <input
+              class="checklist"
+              type="text"
+              placeholder="Type the task here"
+            />
+          </div>
+          <div>
+            <input class="button complete-btn" type="submit" value="Complete" />
+          </div>
         </div>
-        <input class="button complete-btn" type="submit" value="Complete" />
       </form>
     </div>
   </body>
 
-  <div class="connect-section">
+  <div class="flex-container">
     <div class="icon-container">
       <a href="discordapp.com/users/943991100144750603" target="_blank"
         ><img src="pictures/discord_icon.png" class="icon" alt="discord icon" />
